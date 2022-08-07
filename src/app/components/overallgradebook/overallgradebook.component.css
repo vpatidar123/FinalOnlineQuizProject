@@ -1,0 +1,49 @@
+.container{
+    background-color: beige;
+    color: black;
+    /* padding: 10px;
+    margin: 50px; */
+}
+.container-fluid{
+    background-color: papayawhip;
+    color: blue;
+    padding: 5px;
+   
+}
+p{
+    background-color: rgb(192, 229, 119);
+    color: blue;
+    padding: 10px;
+}
+.form-container{
+    background-color: beige;
+    color: black;
+    margin: 15px;
+    margin-left: 300px;
+    padding: 30px;
+    padding-left: 170px;
+    width: 750px;
+}
+.head{
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    margin-left: 500px;
+}
+.home{
+    /* margin-left: 50px;
+    padding-left: 700px;
+    padding-top: 5px; */
+    padding-left: 350px;
+    padding-bottom: 20px;
+ }
+ .details{
+    background-color: lightblue;
+    color: black;
+ }
+
+
+ img{
+    height: 200px;
+    width: 200px;
+ }

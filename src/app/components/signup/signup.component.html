@@ -1,0 +1,16 @@
+
+<div class="main">
+    
+    <form #signupForm="ngForm" class="form1" (ngSubmit)="signUp()" novalidate>
+     <input type="text" class="un" name="email" ngModel #email=ngModel placeholder="Enter Email" required minlength="2" maxlength="30" [(ngModel)]="currentuser.emailid" ><br/>
+    <input type="text" class="un" name="name" ngModel #email=ngModel placeholder="Enter Name" required minlength="2" maxlength="30" [(ngModel)]="currentuser.name" ><br/>
+    <input class="pass" type="password" name="password" ngModel #password=ngModel placeholder="Password" required minlength="2" maxlength="30" [(ngModel)]="currentuser.password"><br/>
+    <select class="un"  name = "userrole" value="role" placeholder="role" [(ngModel)]="currentuser.role">
+        <option   value="student" >student</option>
+        <option   value="administrator">administrator</option>
+        
+      </select>
+    <p align="center">{{message}}</p>
+    <button class="submit"  align="center">signUp</button>
+    </form>
+</div>   
