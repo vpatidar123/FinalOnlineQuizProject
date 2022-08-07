@@ -1,0 +1,9 @@
+  <div class="main">
+    
+        <form #loginForm="ngForm" class="form1" (ngSubmit)="loginSubmit2(loginForm.value)" novalidate>
+        <input type="text" class="un" name="email" ngModel #email=ngModel placeholder="Enter Email" required minlength="2" maxlength="30"><br/>
+        <input class="pass" type="password" name="password" ngModel #password=ngModel placeholder="Password" required minlength="2" maxlength="30"><br/>
+        <p align="center">{{message}}</p>
+        <button class="submit" [disabled]="!loginForm.valid" align="center">Login</button>
+        </form>
+    </div>   

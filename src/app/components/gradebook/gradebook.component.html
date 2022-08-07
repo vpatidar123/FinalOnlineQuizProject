@@ -1,0 +1,30 @@
+<app-student></app-student>
+  
+<div class="container">
+
+    <table class="table table-bordered  table-striped">
+       <tr align="center"> 
+        <th>Quiz</th>
+        <th>Obtained Marks</th>
+        <th>Total Marks</th>
+        <th>Percentage</th>
+       </tr>
+       <tr  align="center" *ngFor="let scorecard of scorecards">
+        <td>{{scorecard.quizname}} </td>
+        <td>{{scorecard.marks}} </td>
+        <td>{{scorecard.totalmarks}} </td>
+        <td>{{scorecard.marks / scorecard.totalmarks * 100}}% </td>              
+      </tr>
+      <tr  align="center" >
+        <td>Total</td>
+        <td>{{marks}}</td>
+        <td>{{totalmarks}}</td>
+        <td>{{percentage}}%</td>              
+    </tr>
+    </table>
+  </div>
+ 
+
+<div align="center">
+    <p class="details">*****All Copyrights Reserved*****</p>
+</div>

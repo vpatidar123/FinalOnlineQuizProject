@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="btn btn-danger" style="margin-bottom: 10px;" (click)="logout()" >Logout</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+
+    <table class="table table-bordered  table-striped">
+       <tr align="center"> 
+        <th>HighestMarks</th>
+        <th>AverageMarks</th>
+        <th>LowestMarks</th>
+        <th>No of student</th>
+       </tr>
+       
+      <tr  align="center" >
+        <td>{{highestmarks}}</td>
+        <td>{{averagemarks}}</td>
+        <td>{{lowestmarks}}</td>
+        <td>{{noOfStudent}}</td>              
+    </tr>
+    </table>
+  </div>
+ 
+<div class="container">
+
+    <table class="table table-bordered  table-striped">
+       <tr align="center"> 
+        <th>Emailid</th>
+        <th>Obtained Marks</th>
+        <th>Total Marks</th>
+        <th>Percentage</th>
+       </tr>
+       <tr  align="center" *ngFor="let scorecard of scorecards">
+        <td>{{scorecard.emailid}} </td>
+        <td>{{scorecard.marks}} </td>
+        <td>{{scorecard.totalmarks}} </td>
+        <td>{{scorecard.marks / scorecard.totalmarks * 100}}% </td>              
+      </tr>
+      
+    </table>
+  </div>
+ 
+
+<div align="center">
+    <p class="details">*****All Copyrights Reserved*****</p>
+</div>

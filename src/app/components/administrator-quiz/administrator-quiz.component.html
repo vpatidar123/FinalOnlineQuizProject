@@ -1,0 +1,15 @@
+<app-administrator></app-administrator>
+  <div class="container" >
+    <div class="row" >
+        <div class="col"  *ngFor="let questionPaper of questionPapers" style="margin-top:100px;">
+            <div class="card" style="width: 18rem;">
+               
+                <div class="card-body">
+                  <h5 class="card-title">{{questionPaper.quizname}}</h5>
+                  <h5 class="card-title">Marks : {{questionPaper.totalmarks}}</h5>
+                  <button class="btn btn-primary" (click)="getScorecardsByQuiz(questionPaper.paperid)">Performance of student</button>
+                </div>
+              </div>
+            </div>
+    </div>
+  </div>
